@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="default.css">
+
+
+
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <script src="default_script.js"></script>
+  <ul class="topnav" id="myTopnav">
+    <li class="bar"><a class="set" href="./index.html" data-title="home">Home</a></li>
+    <li class="bar"><a class="set" href="./cv.html" data-title="About">CV</a></li>
+    <li class="bar"><a class="set" href="./portfolio.html" data-title="Portfolio">Portfolio</a></li>
+    <li class="mobilebar"><a href="javascript:void(0);" class="icon set" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+  </ul>
+
+    <div class="headersmall container">
+    <h1>My Portfolio</h1>
+    </div>
+
+<div>
+
+  <div class="container main content">
+  <div > 
+
+    
+    <h3>Python Implementation of SVCD (2022)
+      <a class="clickicon" id="hovericons" onclick="window.open(
+        'https://github.com/drgHannah/SVCD');"> <i class="fa fa-github"></i></a> 
+    </h3>
+    <p><i>Markus Plack, Hannah Dröge</i></p>
+    <img class="clickable_img" src="./svcd.png">
+    
+      <p class="description">An unofficial Python implementation of the paper Spatially Varying Color Distributions 
+        for Interactive Multi-Label Segmentation by Claudia Nieuwenhuis and Daniel Cremers. </p>
+    <br> 
+    <!-- </div> -->
+
+   
+    <h3>Pytorch Realized Radon Transformation (2022)
+      <a class="clickicon" id="hovericons" onclick="window.open(
+        'https://github.com/drgHannah/Radon-Transformation');"> <i class="fa fa-github"></i></a>
+    </h3>
+    <img class="clickable_img" src="./rec_compare.png"> 
+    <small>Digitally postprocessed images of "The Lung Image Database Consortium (LIDC) and 
+      Image Database Resource Initiative (IDRI): A completed reference database of lung nodules on CT scans." 
+      by Armato SG 3rd et al. [1]</small>
+    
+      <p class="description">An open source implementation of radon transformation and filtered backprojection realized in pytorch for reconstruction 
+        for parallel beam projection of computer tomographic recordings. 
+        The operations are differentiable and can thus can be used for training via backprojection. </p>
+    <br>
+
+    <h3>
+        Mitral Valve Segmentation Using Robust Nonnegative Matrix Factorization  (2021)
+          <a class="clickicon" id="hovericons" onclick="window.open(
+          'https://github.com/drgHannah/mitral-valve-segmentation');"> <i class="fa fa-github"></i></a>
+          <a class="clickicon" id="hovericons" onclick="window.open(
+          'https://www.mdpi.com/2313-433X/7/10/213');"> <i class="fa fa-file"></i></a> 
+    </h3>
+
+    <p><i>Hannah Dröge, Baichuan Yuan, Rafael Llerena, Jesse T. Yen, Michael Möller, Andrea L. Bertozzi</i></p>
+    <img class="clickable_img" src="./mitralvalve.png">
+
+
+    <p class="description">Analyzing and understanding the movement of the mitral valve is of vital importance in
+      cardiology, as the treatment and prevention of several serious heart diseases depend on it. Unfortu-
+      nately, large amounts of noise as well as a highly varying image quality make the automatic tracking
+      and segmentation of the mitral valve in two-dimensional echocardiographic videos challenging. In
+      this paper, we present a fully automatic and unsupervised method for segmentation of the mitral
+      valve in two-dimensional echocardiographic videos, independently of the echocardiographic view.
+      We propose a bias-free variant of the robust non-negative matrix factorization (RNMF) along with a
+      window-based localization approach, that is able to identify the mitral valve in several challenging
+      situations. We improve the average f1-score on our dataset of 10 echocardiographic videos by 0.18 to
+      a f1-score of 0.56.</p>
+    <br>
+
+    <h3>Learning Or Modelling? An Analysis Of Single Image Segmentation
+      Based On Scribble Information (2021)
+      <a class="clickicon" id="hovericons" onclick="window.open(
+        'https://github.com/drgHannah/Single-Image-Segmentation-Based-on-Scribble-Information');"> <i class="fa fa-github"></i></a>
+        <a class="clickicon" id="hovericons" onclick="window.open(
+        'https://ieeexplore.ieee.org/abstract/document/9506185');"> <i class="fa fa-file"></i></a> 
+        <a class="clickicon" id="hovericons" onclick="window.location.href = './pdfs/icip-poster.pdf';"> <i class="fa fa-picture-o" aria-hidden="true"></i></a> 
+    </h3>
+
+      <p><i>Hannah Dröge, Michael Möller</i></p>
+    <img class="clickable_img" src="./scribble.png" onclick="window.location.href = './pdfs/icip-poster.pdf';">
+
+    <p class="description">Single image segmentation based on scribbles is an important technique in several applications, e.g. 
+      for image editing software. In this paper, we investigate the scope of single image segmentation 
+      solely given the image and scribble information using both convolutional neural networks 
+      as well as classical model-based methods, and present three main findings: 1) Despite the 
+      success of deep learning in the semantic analysis of images, networks fail to outperform model-based 
+      approaches in the case of learning on a single image only. Even using a pretrained network for transfer 
+      learning does not yield faithful segmentations. 2) The best way to utilize an annotated data set is by 
+      exploiting a model-based approach that combines semantic features of a pretrained network with the RGB information, 
+      and 3) allowing the networks prediction to change spatially and additionally enforce this variation to be smooth via a 
+      gradient-based regularization term on the loss (double backpropagation) is the most successful strategy for pure single 
+      image learning-based segmentation.</p>
+    <br>
+    <h3>Inverting Gradients - How easy is it to break privacy in federated learning? (2020)
+      <a class="clickicon" id="hovericons" onclick="window.open(
+      'https://github.com/JonasGeiping/invertinggradients');"> <i class="fa fa-github"></i></a>
+      <a class="clickicon" id="hovericons" onclick="window.open(
+      'https://proceedings.neurips.cc/paper/2020/hash/c4ede56bbd98819ae6112b20ac6bf145-Abstract.html');"> <i class="fa fa-file"></i></a> 
+    </h3>
+    <p><i>Jonas Geiping, Hartmut Bauermeister, Hannah Dröge, Michael Möller</i></p>
+    <img class="clickable_img" src="./inverting-gradients.png">
+    <!-- <button style="font-size:24px" onclick="window.open(
+      'https://github.com/JonasGeiping/invertinggradients');"> <i class="fa fa-github"></i></button>
+    <button style="font-size:24px" onclick="window.open(
+      'https://arxiv.org/pdf/2003.14053.pdf');"> <i class="fa fa-file"></i></button> -->
+    <p class="description">The idea of federated learning is to collaboratively train a neural network on a server. 
+      Each user receives the current weights of the network and in turns sends parameter updates (gradients) based on local data. 
+      This protocol has been designed not only to train neural networks data-efficiently, but also to provide privacy benefits for users, 
+      as their input data remains on device and only parameter gradients are shared. But how secure is sharing parameter gradients? 
+      Previous attacks have provided a false sense of security, by succeeding only in contrived settings - even for a single image. 
+      However, by exploiting a magnitude-invariant loss along with optimization strategies based on adversarial attacks, 
+      we show that is is actually possible to faithfully reconstruct images at high resolution from the knowledge of their 
+      parameter gradients, and demonstrate that such a break of privacy is possible even for trained deep networks. 
+      We analyze the effects of architecture as well as parameters on the difficulty of reconstructing an input image and 
+      prove that any input to a fully connected layer can be reconstructed analytically independent of the remaining architecture. 
+      Finally we discuss settings encountered in practice and show that even aggregating gradients over several iterations or several 
+      images does not guarantee the user’s privacy in federated learning applications.</p>
+    <br>
+
+    <h3>References:</h3>
+    
+    <small>[1] Armato SG 3rd, McLennan G, Bidaut L, McNitt-Gray MF, Meyer CR, Reeves AP, Zhao B, Aberle DR, Henschke CI, Hoffman EA, 
+      Kazerooni EA, MacMahon H, Van Beeke EJ, Yankelevitz D, Biancardi AM, Bland PH, Brown MS, Engelmann RM, Laderach GE, Max D, 
+      Pais RC, Qing DP, Roberts RY, Smith AR, Starkey A, Batrah P, Caligiuri P, Farooqi A, Gladish GW, Jude CM, Munden RF, Petkovska I, 
+      Quint LE, Schwartz LH, Sundaram B, Dodd LE, Fenimore C, Gur D, Petrick N, Freymann J, Kirby J, Hughes B, Casteele AV, Gupte S, 
+      Sallamm M, Heath MD, Kuhn MH, Dharaiya E, Burns R, Fryd DS, Salganicoff M, Anand V, Shreter U, Vastagh S, Croft BY.  
+      The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI): A completed reference database of 
+      lung nodules on CT scans. Medical Physics, 38: 915--931, 2011. DOI: https://doi.org/10.1118/1.3528204</small>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <p><a href="impressum.html">Legal Notice</a></p>
+</div>
+
+</body>
+</html>
+
