@@ -65,6 +65,10 @@
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
+    /* flex-direction: column; */
+
+  /* height: 100%;
+  width: 100%; */
   }
   
   /* Create two unequal columns that sits next to each other */
@@ -140,6 +144,7 @@
     height:50px; */
     /* margin-top: -50px;        */
     vertical-align: middle;
+    color: black;
   }
 
 
@@ -242,9 +247,9 @@
     min-height: 1px;
     float: left;
  }
-.row {   
+/* .row {   
   flex-direction: column;
-}
+} */
 
 /* Settings for the Navigationbar */
 ul {
@@ -324,4 +329,12 @@ a.set {
     display: block;
     text-align: left;
   }
+}
+
+@media screen and (max-width: 630px) {
+  .row {   
+    flex-direction: column;
+  }
+
+  .nine        { width: 100%; }
 }
