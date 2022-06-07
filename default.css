@@ -231,7 +231,7 @@
     text-transform: uppercase;
   } 
   
-  .nine        { width: 75%; }
+  .nine        { width: 75%; text-align: justify;}
   .three       { width: 25%; }
 
   h1 {
