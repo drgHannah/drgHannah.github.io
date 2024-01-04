@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Hannah Dröge",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
+    "email": "drg.hannah@gmail.com",
     "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "url": "https://drgHannah.github.io/",
+    "summary": "A computer scientist in the field of model- and learning based methods",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -49,7 +49,7 @@
     }],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
+      "institution": "University of Siegennnn, Zurich, Switzerland",
       "location": "Zurich, Switzerland",
       "url": "https://www.uzh.ch/",
       "area": "Software Development",
