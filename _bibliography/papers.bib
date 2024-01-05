@@ -5,7 +5,10 @@
   volume={33},
   pages={16937--16947},
   year={2020},
-  preview={inverting-gradient.png}
+  preview={inverting-gradient.png},
+  code={https://github.com/JonasGeiping/invertinggradients},
+  pdf={NeurIPS-2020-inverting-gradients-how-easy-is-it-to-break-privacy-in-federated-learning-Paper.pdf},
+  abstract={The idea of federated learning is to collaboratively train a neural network on a server. Each user receives the current weights of the network and in turns sends parameter updates (gradients) based on local data. This protocol has been designed not only to train neural networks data-efficiently, but also to provide privacy benefits for users, as their input data remains on device and only parameter gradients are shared. But how secure is sharing parameter gradients? Previous attacks have provided a false sense of security, by succeeding only in contrived settings-even for a single image. However, by exploiting a magnitude-invariant loss along with optimization strategies based on adversarial attacks, we show that is is actually possible to faithfully reconstruct images at high resolution from the knowledge of their parameter gradients, and demonstrate that such a break of privacy is possible even for trained deep networks. We analyze the effects of architecture as well as parameters on the difficulty of reconstructing an input image and prove that any input to a fully connected layer can be reconstructed analytically independent of the remaining architecture. Finally we discuss settings encountered in practice and show that even averaging gradients over several iterations or several images does not protect the user's privacy in federated learning applications.}
 }
 
 @inproceedings{droegeexplorable,
@@ -15,7 +18,10 @@
   publisher = {{BMVA} Press},
   year      = {2022},
   url       = {https://bmvc2022.mpi-inf.mpg.de/0746.pdf},
-  preview={ct_explore.png}
+  preview={ct_explore.png},
+  pdf={Explorable.pdf},
+  code={https://github.com/drgHannah/Explorable_CT_Reconstruction},
+  abstract={Computed Tomography (CT) is an indispensable tool for the detection and assessment of various medical conditions. This, however, comes at the cost of the health risks entailed in the usage of ionizing X-ray radiation. Using sparse-view CT aims to minimize these risks, as well as to reduce scan times, by capturing fewer X-ray projections, which correspond to fewer projection angles. However, the lack of sufficient projections may introduce significant ambiguity when solving the ill-posed inverse CT reconstruction problem, which may hinder the medical interpretation of the results. We propose a method for resolving these ambiguities, by conditioning image reconstruction on different possible semantic meanings. We demonstrate our method on the task of identifying malignant lung nodules in chest CT. To this end, we exploit a pre-trained malignancy classifier for producing an array of possible reconstructions corresponding to different malignancy levels, rather than outputting a single image corresponding to an arbitrary medical interpretation. The data-consistency of all our method reconstructions then facilitates performing a reliable and informed diagnosis (eg by a medical doctor).}
 }
 
 @inproceedings{droegelearning,
@@ -25,7 +31,10 @@
   pages        = {2274--2278},
   year         = {2021},
   organization = {IEEE},
-  preview={scribble.png}
+  preview={scribble.png},
+  html={https://ieeexplore.ieee.org/document/9506185},
+  code={https://github.com/drgHannah/Single-Image-Segmentation-Based-on-Scribble-Information},
+  abstract={Single image segmentation based on scribbles is an important technique in several applications, e.g. for image editing software. In this paper, we investigate the scope of single image segmentation solely given the image and scribble information using both convolutional neural networks as well as classical model-based methods, and present three main findings: 1) Despite the success of deep learning in the semantic analysis of images, networks fail to outperform model-based approaches in the case of learning on a single image only. Even using a pretrained network for transfer learning does not yield faithful segmentations. 2) The best way to utilize an annotated data set is by exploiting a model-based approach that combines semantic features of a pretrained network with the RGB information, and 3) allowing the networks prediction to change spatially and additionally enforce this variation to be smooth via a gradient-based regularization term on the loss (double backpropagation) is the most successful strategy for pure single image learning-based segmentation.}
 }
 
 @inproceedings{droegenonsmooth,
@@ -35,7 +44,10 @@
   pages        = {3281--3285},
   year         = {2022},
   organization = {IEEE},
-  preview={moreau2.png}
+  preview={moreau2.png},
+  code={https://github.com/drgHannah/Non-Smooth-Energy-Dissipating-Networks},
+  html={https://ieeexplore.ieee.org/document/9897173},
+  abstract={Over the past decade, deep neural networks have been shown to perform extremely well on a variety of image reconstruction tasks. Such networks do, however, fail to provide guarantees about these predictions, making them difficult to use in safety-critical applications. Recent works addressed this problem by combining model-and learning-based approaches, e.g., by forcing networks to iteratively minimize a model-based cost function via the prediction of suitable descent directions. While previous approaches were limited to continuously differentiable cost functions, this paper discusses a way to remove the restriction of differentiability. We propose to use the Moreau-Yosida regularization of such costs to make the framework of energy dissipating networks applicable. We demonstrate our framework on two exemplary applications, i.e., safeguarding energy dissipating denoising networks to the expected distribution of the noise as well as enforcing binary constraints on bar-code deblurring networks to improve their respective performances.}
 }
 
 @article{droge2021mitral,
@@ -47,7 +59,10 @@
   pages     = {213},
   year      = {2021},
   publisher = {Multidisciplinary Digital Publishing Institute},
-  preview={mitralvalve.png}
+  preview={mitralvalve.png},
+  pdf={jimaging-mitral-valve-segmentation.pdf},
+  code={https://github.com/drgHannah/Mitral-Valve-Segmentation},
+  abstract={Analyzing and understanding the movement of the mitral valve is of vital importance in cardiology, as the treatment and prevention of several serious heart diseases depend on it. Unfortunately, large amounts of noise as well as a highly varying image quality make the automatic tracking and segmentation of the mitral valve in two-dimensional echocardiographic videos challenging. In this paper, we present a fully automatic and unsupervised method for segmentation of the mitral valve in two-dimensional echocardiographic videos, independently of the echocardiographic view. We propose a bias-free variant of the robust non-negative matrix factorization (RNMF) along with a window-based localization approach, that is able to identify the mitral valve in several challenging situations. We improve the average f1-score on our dataset of 10 echocardiographic videos by 0.18 to a f1-score of 0.56.}
 }
 
 @article{droge2023kissing,
@@ -55,12 +70,20 @@
   author  = {Droege, Hannah and Laehner, Zorah and Bahat, Yuval and Martorell, Onofre and Heide, Felix and Moeller, Michael},
   journal = {arXiv preprint arXiv:2308.13252},
   year    = {2023},
-  preview={matrix.png}
+  preview={matrix.png},
+  pdf={NeurIPS-2023_kissing_to_find_a_match_effici.pdf},
+  abstract={Permutation matrices play a key role in matching and assignment problems across the fields, especially in computer vision and robotics. However, memory for explicitly representing permutation matrices grows quadratically with the size of the problem, prohibiting large problem instances. In this work, we propose to tackle the curse of dimensionality of large permutation matrices by approximating them using low-rank matrix factorization, followed by a nonlinearity. To this end, we rely on the Kissing number theory to infer the minimal rank required for representing a permutation matrix of a given size, which is significantly smaller than the problem size. This leads to a drastic reduction in computation and memory costs, e.g., up to 3 orders of magnitude less memory for a problem of size n=20000, represented using 8.4×10^5 elements in two small matrices instead of using a single huge matrix with 4×10^8 elements. The proposed representation allows for accurate representations of large permutation matrices, which in turn enables handling large problems that would have been infeasible otherwise. We demonstrate the applicability and merits of the proposed approach through a series of experiments on a range of problems that involve predicting permutation matrices, from linear and quadratic assignment to shape matching problems. },
+  code={https://github.com/drgHannah/Kissing-to-Find-a-Match}
 }
 
 @inproceedings{gandikota2023evaluating,
   title={Evaluating Adversarial Robustness of Low dose CT Recovery},
   author={Gandikota, Kanchana Vaishnavi and Chandramouli, Paramanand and Droege, Hannah and Moeller, Michael},
   booktitle={Medical Imaging with Deep Learning},
-  year={2023}
+  year={2023},
+  preview={attack.png},
+  pdf={166_evaluating_adversarial_robustn.pdf},
+  abstract={Low dose computer tomography (CT) acquisition using reduced radiation or sparse angle measurements is recommended to decrease the harmful effects of X-ray radiation. Recent works successfully apply deep networks to the problem of low dose CT recovery
+on benchmark datasets. However, their robustness needs a thorough evaluation before use in clinical settings. In this work, we evaluate the robustness of different deep learning  approaches and classical methods for CT recovery.We show that deep networks, including model based networks encouraging data consistency are more susceptible to untargeted attacks. Surprisingly, we observe that data consistency is not heavily affected  even for these poor quality reconstructions, motivating the need for better regularization for the networks. We demonstrate the feasibility of  universal attacks and study attack transferability across different methods.  We analyze robustness to attacks causing localized changes in clinically relevant regions. Both classical approaches and deep networks are affected by such attacks leading to change in  visual appearance of localized lesions, for extremely small perturbations. As the resulting reconstructions have high
+data consistency with original measurements, these localized attacks can be used to explore the solution space of CT recovery problem. }
 }
