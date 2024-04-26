@@ -68,13 +68,15 @@
 @article{droge2023kissing,
   title   = {Kissing to find a match: efficient low-Rank permutation representation},
   author  = {Droege, Hannah and Laehner, Zorah and Bahat, Yuval and Martorell, Onofre and Heide, Felix and Moeller, Michael},
-  journal = {arXiv preprint arXiv:2308.13252},
-  year    = {2023},
+  journal = {Advances in Neural Information Processing Systems},
+  year    = {2024},
+  volume={36},
   preview={matrix.png},
   pdf={NeurIPS-2023_kissing_to_find_a_match_effici.pdf},
   abstract={Permutation matrices play a key role in matching and assignment problems across the fields, especially in computer vision and robotics. However, memory for explicitly representing permutation matrices grows quadratically with the size of the problem, prohibiting large problem instances. In this work, we propose to tackle the curse of dimensionality of large permutation matrices by approximating them using low-rank matrix factorization, followed by a nonlinearity. To this end, we rely on the Kissing number theory to infer the minimal rank required for representing a permutation matrix of a given size, which is significantly smaller than the problem size. This leads to a drastic reduction in computation and memory costs, e.g., up to 3 orders of magnitude less memory for a problem of size n=20000, represented using 8.4×10^5 elements in two small matrices instead of using a single huge matrix with 4×10^8 elements. The proposed representation allows for accurate representations of large permutation matrices, which in turn enables handling large problems that would have been infeasible otherwise. We demonstrate the applicability and merits of the proposed approach through a series of experiments on a range of problems that involve predicting permutation matrices, from linear and quadratic assignment to shape matching problems. },
   code={https://github.com/drgHannah/Kissing-to-Find-a-Match}
 }
+
 
 @inproceedings{gandikota2023evaluating,
   title={Evaluating Adversarial Robustness of Low dose CT Recovery},
@@ -86,4 +88,14 @@
   abstract={Low dose computer tomography (CT) acquisition using reduced radiation or sparse angle measurements is recommended to decrease the harmful effects of X-ray radiation. Recent works successfully apply deep networks to the problem of low dose CT recovery
 on benchmark datasets. However, their robustness needs a thorough evaluation before use in clinical settings. In this work, we evaluate the robustness of different deep learning  approaches and classical methods for CT recovery.We show that deep networks, including model based networks encouraging data consistency are more susceptible to untargeted attacks. Surprisingly, we observe that data consistency is not heavily affected  even for these poor quality reconstructions, motivating the need for better regularization for the networks. We demonstrate the feasibility of  universal attacks and study attack transferability across different methods.  We analyze robustness to attacks causing localized changes in clinically relevant regions. Both classical approaches and deep networks are affected by such attacks leading to change in  visual appearance of localized lesions, for extremely small perturbations. As the resulting reconstructions have high
 data consistency with original measurements, these localized attacks can be used to explore the solution space of CT recovery problem. }
+}
+
+@article{auras2024robustness,
+  title={Robustness and Exploration of Variational and Machine Learning Approaches to Inverse Problems: An Overview},
+  author={Auras, Alexander and Gandikota, Kanchana Vaishnavi and Droege, Hannah and Moeller, Michael},
+  journal={arXiv preprint arXiv:2402.12072},
+  year={2024},
+  preview={robustness.png},
+  pdf={GAMM_Overview_Inverse_Problems_and_ML.pdf},
+  abstract={This paper attempts to provide an overview of current approaches for solving inverse problems in imaging using variational methods and machine learning. A special focus lies on point estimators and their robustness against adversarial perturbations. In this context results of numerical experiments for a one-dimensional toy problem are provided, showing the robustness of different approaches and empirically verifying theoretical guarantees. Another focus of this review is the exploration of the subspace of data consistent solutions through explicit guidance to satisfy specific semantic or textural properties.}
 }

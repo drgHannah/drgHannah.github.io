@@ -1,12 +1,12 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://cg.cs.uni-bonn.de/'>Institut für Informatik II</a><br><a href='https://www.uni-bonn.de/en/'>Rheinische Friedrich-Wilhelms-Universität Bonn </a>
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   # more_info: >
   #   <p>Room 3023</p>
   #   <p>Inst. f. Informatik II</p>
@@ -34,4 +34,3 @@ My interests range from computer vision optimization to applying machine learnin
 
 If you're curious about my work or have any questions about it, feel free to reach out at drg.hannah(at)gmail.com. I'm also open to casual conversations over coffee!
 
-<!-- Hi, my name is Hannah and I am a computer scientist with a focus on machine learning, working with hybrid learning-based and model-based optimization approaches in computer vision. I started studying computer science in 2013 and received my bachelor's degree from the University of Siegen, Germany, as well as my master's degree, which I passed with distinction. I wrote my master's thesis in Los Angeles at UCLA (after participating in a math summer program), for which I received a DAAD scholarship. Recently, I worked on machine learning related topics at the chair of Computer Vision at the University of Siegen and I am currently employed at the Computer graphics chair at the University in Bonn. In general, I like to learn new things and enjoy using my skills in different application areas. Please feel free to contact me per email (drg.hannah(at)gmail.com) if you have any general questions, questions regarding my research topics, or if you just want to talk to me over a cup of coffee!  -->
