@@ -28,7 +28,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 Hello! I'm Hannah, a computer scientist specializing in machine learning. My journey began in 2013 at the University of Siegen, Germany, where I earned both my bachelor's and master's degrees, graduating with distinction in the latter. My master's thesis was completed at UCLA, Los Angeles, supported by a DAAD scholarship.
 
-Currently, I'm excited to be part of the Computer Graphics team at the University of Bonn, where I am involved in *InVirtuo 4.0*. Previously, I worked in machine learning at the Computer Vision chair in Siegen, exploring the combination of learning-based and model-based methods.
+Currently, I'm excited to be part of the [Computer Graphics team at the University of Bonn](https://cg.cs.uni-bonn.de/), where I am involved in *[InVirtuo 4.0](https://invirtuo.org/)*. Previously, I worked in machine learning at the [Computer Vision chair in Siegen](https://www.vsa.informatik.uni-siegen.de/en/home), exploring the combination of learning-based and model-based methods.
 
 My interests range from computer vision optimization to applying machine learning in various fields. I enjoy the challenge of applying my expertise in different contexts.
 

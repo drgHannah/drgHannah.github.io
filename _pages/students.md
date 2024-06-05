@@ -13,6 +13,7 @@ If you have a specific thesis topic in mind that you would like to work on, plea
 
 **Open Thesis Topics:**
 
-- *Domain Adaptation for Real-Time Matting*  
-   Required prior knowledge: PyTorch
 
+- *Background Matting: A Study on Capture-Stage Datasets and Domain Adaptation*
+
+  Analysis, implementation, and comparison of existing matting algorithms applied to unseen capture stage datasets. Further details can be found **[here](https://uni-bonn.sciebo.de/s/xRpRvvZPVt1sGjW)**. Prior knowledge of Python and Pytorch is recommended.  
