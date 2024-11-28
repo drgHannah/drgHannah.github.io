@@ -20,9 +20,9 @@ This thesis project focuses on creating more visually realistic 3D animal models
 
 To address this, this thesis explores the use of Gaussian splatting to simulate intricate textures, such as fur, on CASA-generated meshes. The primary objectives include developing and optimizing a Gaussian splatting method for fur textures to improve the appearance of 3D animal models. Furthermore, there are also options for extending the system to include animations and/or capturing videos.
 
-![Alt text](/assets/img/image.png){: style="width: 100%; height: auto;"}
+![Alt text](/assets/img/casa.png){: style="width: 100%; height: auto;"}
 
-*3D animal reconstruction. Image is taken from Wu, Yuefan, et al. "Casa: Category-agnostic skeletal animal reconstruction." Advances in Neural Information Processing Systems 35 (2022): 28559-28574.*
+*3D animal reconstruction. Image partly taken and modified from Wu, Yuefan, et al. "Casa: Category-agnostic skeletal animal reconstruction." Advances in Neural Information Processing Systems 35 (2022): 28559-28574.*
 
 ---
 
