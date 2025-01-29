@@ -68,6 +68,12 @@ In this thesis, we aim to integrate the [MediaPipe Pose Landmarker](https://ai.g
 
 ## **3D Shape Reconstruction**
 ### Neural Radiance Fields (NeRF) with Infrared Images
-Neural Radiance Fields (NeRF) (e.g [InstantNGP](https://github.com/NVlabs/instant-ngp)) have revolutionized 3D reconstruction by synthesizing high-quality novel views from 2D images. However, NeRF struggles with precise shape reconstruction, especially in challenging lighting conditions or textureless regions.
+Neural Radiance Fields (NeRF) (e.g. [InstantNGP](https://github.com/NVlabs/instant-ngp)) have revolutionized 3D reconstruction by synthesizing high-quality novel views from 2D images. However, NeRF struggles with precise shape reconstruction, especially in challenging lighting conditions or textureless regions.
 
 This thesis investigates the integration of infrared (IR) stereo images with active illumination to improve the accuracy of NeRF. The approach utilizes IR stereo cameras with projected patterns to provide additional geometric cues missing from standard RGB inputs.
+
+---
+## **Image Processing**
+### Joint Debayering and Denoising
+
+This project explores a joint approach to debayering and denoising to improve image quality, targeting our capture stage data. Possible extensions include leveraging temporal consistency across frames to enhance detail preservation and noise reduction.
