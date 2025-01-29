@@ -56,12 +56,18 @@ In this thesis the objective is to extend [Vision Transformer (ViT)-based mattin
 
 ## **3D Pose Estimation**
 ### Multi View Landmark Detection
-(Bachelorthesis)
+
 
 
 In this thesis, we aim to integrate the [MediaPipe Pose Landmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker) into the Capture-Dome software for multiview 3D pose estimation. By utilizing MediaPipe’s robust 2D landmark detection across multiple synchronized camera views, the goal is to reconstruct accurate 3D poses.
+![Alt text](/assets/img/landmark.png){: style="width: 85%; height: auto;"}
 
-<!-- ![Alt text](/assets/img/ViTMatte.png){: style="width: 100%; height: auto;"}
+*Landmarks created via MediaPipe Pose Landmarker*
 
-*Vision Transformer (ViT)-based matting. Image taken from Yao, Jingfeng, et al. "Vitmatte: Boosting image matting with pre-trained plain vision transformers." Information Fusion 103 (2024): 102091.*
- -->
+---
+
+## **3D Shape Reconstruction**
+### Neural Radiance Fields (NeRF) with Infrared Images
+Neural Radiance Fields (NeRF) (e.g [InstantNGP](https://github.com/NVlabs/instant-ngp)) have revolutionized 3D reconstruction by synthesizing high-quality novel views from 2D images. However, NeRF struggles with precise shape reconstruction, especially in challenging lighting conditions or textureless regions.
+
+This thesis investigates the integration of infrared (IR) stereo images with active illumination to improve the accuracy of NeRF. The approach utilizes IR stereo cameras with projected patterns to provide additional geometric cues missing from standard RGB inputs.
