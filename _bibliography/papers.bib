@@ -11,6 +11,17 @@
   abstract={The idea of federated learning is to collaboratively train a neural network on a server. Each user receives the current weights of the network and in turns sends parameter updates (gradients) based on local data. This protocol has been designed not only to train neural networks data-efficiently, but also to provide privacy benefits for users, as their input data remains on device and only parameter gradients are shared. But how secure is sharing parameter gradients? Previous attacks have provided a false sense of security, by succeeding only in contrived settings-even for a single image. However, by exploiting a magnitude-invariant loss along with optimization strategies based on adversarial attacks, we show that is is actually possible to faithfully reconstruct images at high resolution from the knowledge of their parameter gradients, and demonstrate that such a break of privacy is possible even for trained deep networks. We analyze the effects of architecture as well as parameters on the difficulty of reconstructing an input image and prove that any input to a fully connected layer can be reconstructed analytically independent of the remaining architecture. Finally we discuss settings encountered in practice and show that even averaging gradients over several iterations or several images does not protect the user's privacy in federated learning applications.}
 }
 
+@article{kaltheuner2025preconditioned,
+  title={Preconditioned Deformation Grids},
+  author={Kaltheuner, Julian and Oebel, Alexander and Droege, Hannah and Stotko, Patrick and Klein, Reinhard},
+  journal={arXiv preprint arXiv:2509.18097},
+  year={2025},
+  abstract={Dynamic surface reconstruction of objects from point cloud sequences is a challenging field in computer graphics. Existing approaches either require multiple regularization terms or extensive training data which, however, lead to compromises in reconstruction accuracy as well as over-smoothing or poor generalization to unseen objects and motions. To address these lim- itations, we introduce Preconditioned Deformation Grids, a novel technique for estimating coherent deformation fields directly from unstructured point cloud sequences without requiring or forming explicit correspondences. Key to our approach is the use of multi-resolution voxel grids that capture the overall motion at varying spatial scales, enabling a more flexible deformation representation. In conjunction with incorporating grid-based Sobolev preconditioning into gradient-based optimization, we show that applying a Chamfer loss between the input point clouds as well as to an evolving template mesh is sufficient to obtain accurate deformations. To ensure temporal consistency along the object surface, we include a weak isometry loss on mesh edges which complements the main objective without constraining deformation fidelity. Extensive evaluations demonstrate that our method achieves superior results, particularly for long sequences, compared to state-of-the-art techniques.},
+  preview={precond.png},
+  pdf={Preconditioned_Deformation_Grids.pdf},
+  code={https://github.com/vc-bonn/preconditioned-deformation-grids}
+}
+
 @inproceedings{droegeexplorable,
   author    = {Hannah Droege and Yuval Bahat and Felix Heide and Michael Moeller},
   title     = {Explorable Data Consistent CT Reconstruction},
@@ -65,19 +76,30 @@
   abstract={Analyzing and understanding the movement of the mitral valve is of vital importance in cardiology, as the treatment and prevention of several serious heart diseases depend on it. Unfortunately, large amounts of noise as well as a highly varying image quality make the automatic tracking and segmentation of the mitral valve in two-dimensional echocardiographic videos challenging. In this paper, we present a fully automatic and unsupervised method for segmentation of the mitral valve in two-dimensional echocardiographic videos, independently of the echocardiographic view. We propose a bias-free variant of the robust non-negative matrix factorization (RNMF) along with a window-based localization approach, that is able to identify the mitral valve in several challenging situations. We improve the average f1-score on our dataset of 10 echocardiographic videos by 0.18 to a f1-score of 0.56.}
 }
 
-@article{plack2024vhs,
-      title={VHS: High-Resolution Iterative Stereo Matching with Visual Hull Priors}, 
-      author={Markus Plack and Hannah Droege and Leif Van Holland and Matthias B. Hullin},
-      year={2024},
-      eprint={2406.02552},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-    preview={vhs.png},
-    journal={arXiv preprint arXiv:2406.02552},
+
+@inproceedings{plack2024vhs,
+  title={VHS: High-Resolution Iterative Stereo Matching with Visual Hull Priors},
+  author={Plack, Markus and Droege, Hannah and Van Holland, Leif and Hullin, Matthias B},
+  booktitle={2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  pages={505--514},
+  year={2025},
+  organization={IEEE},
+      preview={vhs.png},
     pdf={VHS__High_Resolution_Stereo_Matching_with_Visual_Hull_Priors.pdf},
     abstract={We present a stereo-matching method for depth estimation from high-resolution images using visual hulls as priors, and a memory-efficient technique for the correlation computation. Our method uses object masks extracted from supplementary views of the scene to guide the disparity estimation, effectively reducing the search space for matches. This approach is specifically tailored to stereo rigs in volumetric capture systems, where an accurate depth plays a key role in the downstream reconstruction task. To enable training and regression at high resolutions targeted by recent systems, our approach extends a sparse correlation computation into a hybrid sparse-dense scheme suitable for application in leading recurrent network architectures.
 We evaluate the performance-efficiency trade-off of our method compared to state-of-the-art methods, and demonstrate the efficacy of the visual hull guidance. In addition, we propose a training scheme for a further reduction of memory requirements during optimization, facilitating training on high-resolution data.}
 }
+
+@article{droge2025capture,
+  title={Capture Stage Environments: A Guide to Better Matting},
+  author={Droege, Hannah and Pfeifer, Janelle and Rabich, Saskia and Plack, Markus and Klein, Reinhard and Hullin, Matthias B},
+  journal={arXiv preprint arXiv:2507.07623},
+  year={2025},
+  abstract={Capture stages are high-end sources of state-of-the-art recordings for downstream applications in movies, games, and other media. One crucial step in almost all pipelines is the matting of images to isolate the captured performances from the background. While common matting algorithms deliver remarkable performance in other applications like teleconferencing and mobile entertainment, we found that they struggle significantly with the peculiarities of capture stage content. The goal of our work is to share insights into those challenges as a curated list of those characteristics along with a constructive discussion for proactive intervention and present a guideline to practitioners for an improved workflow to mitigate unresolved challenges. To this end, we also demonstrate an efficient pipeline to adapt state-of-the-art approaches to such custom setups without the need of extensive annotations, both offline and real-time. For an objective evaluation, we propose a validation methodology based on a leading diffusion model that highlights the benefits of our approach.},
+  preview={matting.png},
+  html = {https://arxiv.org/abs/2507.07623},
+}
+
 
 @article{droge2023kissing,
   title   = {Kissing to Find a Match: Efficient Low-Rank Permutation Representation},
@@ -104,12 +126,18 @@ on benchmark datasets. However, their robustness needs a thorough evaluation bef
 data consistency with original measurements, these localized attacks can be used to explore the solution space of CT recovery problem. }
 }
 
+
+
 @article{auras2024robustness,
-  title={Robustness and Exploration of Variational and Machine Learning Approaches to Inverse Problems: An Overview},
+  title={Robustness and exploration of variational and machine learning approaches to inverse problems: An overview},
   author={Auras, Alexander and Gandikota, Kanchana Vaishnavi and Droege, Hannah and Moeller, Michael},
-  journal={arXiv preprint arXiv:2402.12072},
+  journal={GAMM-Mitteilungen},
+  volume={47},
+  number={4},
+  pages={e202470003},
   year={2024},
-  preview={robustness.png},
+  publisher={Wiley Online Library},
+    preview={robustness.png},
   pdf={GAMM_Overview_Inverse_Problems_and_ML.pdf},
   abstract={This paper attempts to provide an overview of current approaches for solving inverse problems in imaging using variational methods and machine learning. A special focus lies on point estimators and their robustness against adversarial perturbations. In this context results of numerical experiments for a one-dimensional toy problem are provided, showing the robustness of different approaches and empirically verifying theoretical guarantees. Another focus of this review is the exploration of the subspace of data consistent solutions through explicit guidance to satisfy specific semantic or textural properties.}
 }
