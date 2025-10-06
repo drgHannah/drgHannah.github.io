@@ -12,6 +12,19 @@
 }
 
 
+@inproceedings{zingsheim2025riftcast,
+	title = {RIFTCast: A {Template}-{Free} {End}-to-{End} {Multi}-{View} {Live} {Telepresence} {Framework} and {Benchmark}},
+	author = {Zingsheim, Domenic and Plack, Markus and Dr{\" o}ge, Hannah and Pfeifer, Janelle and Stotko, Patrick and Hullin, Matthias B. and Klein, Reinhard},
+	booktitle = {ACM {Multimedia}},
+	year = {2025},
+	month = {8},
+	doi = {10.1145/3746027.3754789},
+  preview={zingsheim_2025_1.gif},
+  abstract={Immersive telepresence aims to authentically reproduce remote physical scenes, enabling the experience of real-world places, objects and people over large geographic distances. This requires the ability to generate realistic novel views of the scene with low latency. Existing methods either depend on depth data from specialized hardware setups or precomputed templates such as human models, which severely restrict their practicality and generalization to diverse scenes. To address these challenges, we introduce RIFTCast, a real-time template-free volumetric reconstruction framework that synthesizes high-fidelity dynamic scenes from a multi-view RGB-only capture setup. The framework is specifically targeted at the efficient reconstruction, transmission and visualization of complex scenes, including extensive human-human and human-object interactions. For this purpose, our method leverages a GPU-accelerated client-server pipeline that computes a visual hull representation to select a suitable subset of images for novel view synthesis, substantially reducing bandwidth and computation demands. This lightweight architecture enables deployment from small-scale configurations to sophisticated multi-camera capture stages, achieving low-latency telepresence even on resource-constrained devices. For evaluation, we provide a comprehensive high-quality multi-view video data benchmark as well as our reconstruction and rendering code, including tools for loading and processing a variety of data input formats, to facilitate future telepresence research.},
+  pdf={zingsheim_2025a.pdf},
+  html = {https://cg.cs.uni-bonn.de/publication/zingsheim-2025-riftcast},
+}
+
 @inproceedings{schmitz2026gaze,
   author    = {Schmitz, Lio and Plack, Markus and Koyak, Berkan and Ullah, Muhammad Ehsan and Aziz, Ahmad and Klein, Reinhard and Lähner, Zorah and Droege, Hannah},
   title     = {Towards Automated Analysis of Gaze Behavior from Consumer VR Devices for Neurological Diagnosis},
@@ -44,7 +57,7 @@
   booktitle = {British Machine Vision Conference},
   publisher = {{BMVA} Press},
   year      = {2022},
-  url       = {https://bmvc2022.mpi-inf.mpg.de/0746.pdf},
+  html       = {https://bmvc2022.mpi-inf.mpg.de/0746.pdf},
   preview={ct_explore.png},
   pdf={Explorable.pdf},
   code={https://github.com/drgHannah/Explorable_CT_Reconstruction},
