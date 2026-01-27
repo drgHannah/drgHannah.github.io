@@ -1,3 +1,22 @@
+@inproceedings{holland2026transformerbased,
+	title = {Transformer-{Based} {Inpainting} for {Real}-{Time} 3D {Streaming} in {Sparse} {Multi}-{Camera} {Setups}},
+	author = {Holland, Leif Van and Zingsheim, Domenic and Takhsha, Mana and Dr{\" o}ge, Hannah and Stotko, Patrick and Plack, Markus and Klein, Reinhard},
+	booktitle = {Winter {Conference} on {Applications} in {Computer} {Vision} ({WACV})},
+	year = {2026},
+  preview={transformer_inpainting.png},
+  abstract={High-quality 3D streaming from multiple cameras is crucial for immersive experiences in many AR/VR applications. The limited number of views – often due to real-time constraints – leads to missing information and incomplete surfaces in the rendered images. Existing approaches typically rely on simple heuristics for the hole filling, which can result in inconsistencies or visual artifacts. We propose to complete the missing textures using a novel, application-targeted inpainting method independent of the underlying representation as an image-based post-processing step after the novel view rendering. The method is designed as a standalone module compatible with any calibrated multi-camera system. For this we introduce a multi-view aware, transformer-based network architecture using spatio-temporal embeddings to ensure consistency across frames while preserving fine details. Additionally, our resolution-independent design allows adaptation to different camera setups, while an adaptive patch selection strategy balances inference speed and quality, allowing real-time performance. We evaluate our approach against state-of-the-art inpainting techniques under the same real-time constraints and demonstrate that our model achieves the best trade-off between quality and speed, outperforming competitors in both image and video-based metrics.},
+}
+
+@article{juttner2025yesnt,
+  title={Yesnt: Are Diffusion Relighting Models Ready for Capture Stage Compositing? A Hybrid Alternative to Bridge the Gap},
+  author={J{\"u}ttner, Elisabeth and Krath, Leona and Korfhage, Stefan and Dr{\"o}ge, Hannah and Hullin, Matthias B and Plack, Markus},
+  journal={arXiv preprint arXiv:2510.23494},
+  year={2026},
+  preview={yesnt.png},
+  html = {https://arxiv.org/abs/2510.23494},
+  abstract={Volumetric video relighting is essential for bringing captured performances into virtual worlds, but current approaches struggle to deliver temporally stable, production-ready results. Diffusion-based intrinsic decomposition methods show promise for single frames, yet suffer from stochastic noise and instability when extended to sequences, while video diffusion models remain constrained by memory and scale. We propose a hybrid relighting framework that combines diffusion-derived material priors with temporal regularization and physically motivated rendering. Our method aggregates multiple stochastic estimates of per-frame material properties into temporally consistent shading components, using optical-flow-guided regularization. For indirect effects such as shadows and reflections, we extract a mesh proxy from Gaussian Opacity Fields and render it within a standard graphics pipeline. Experiments on real and synthetic captures show that this hybrid strategy achieves substantially more stable relighting across sequences than diffusion-only baselines, while scaling beyond the clip lengths feasible for video diffusion. These results indicate that hybrid approaches, which balance learned priors with physically grounded constraints, are a practical step toward production-ready volumetric video relighting.}
+}
+
 @article{geiping2020inverting,
   title={Inverting Gradients-How Easy is it to Break Privacy in Federated Learning?},
   author={Geiping, Jonas and Bauermeister, Hartmut and Droege, Hannah and Moeller, Michael},
@@ -25,6 +44,7 @@
   html = {https://cg.cs.uni-bonn.de/publication/zingsheim-2025-riftcast},
 }
 
+
 @inproceedings{schmitz2026gaze,
   author    = {Schmitz, Lio and Plack, Markus and Koyak, Berkan and Ullah, Muhammad Ehsan and Aziz, Ahmad and Klein, Reinhard and Lähner, Zorah and Droege, Hannah},
   title     = {Towards Automated Analysis of Gaze Behavior from Consumer VR Devices for Neurological Diagnosis},
@@ -33,21 +53,25 @@
   publisher = {World Scientific Publishing Co.},
   address   = {Singapore},
   url       = {http://psb.stanford.edu/},
-  note      = {Preprint},
   abstract={Recent studies have demonstrated that eye tracking is a valuable tool in the detection, classification and staging of neurodegenerative diseases such as Parkinson’s Disease (PD). However, traditional methods for capturing gaze data often rely on expensive and non-engaging clinical equipment such as video-oculography, limiting their accessibility and scalability. In this work, we investigate the feasibility of using eye tracking data collected via consumer-grade virtual reality (VR) headsets to support neurological diagnostics in a more accessible and user-friendly manner. This approach enables large-scale, low-cost, and remote assessments, which are particularly valuable in early detection and monitoring of neurodegenerative conditions. We show that relevant oculomotor features extracted from VR-based eye tracking can be used for predictive assessment. Despite the inherent noise and lower precision of consumer devices, careful preprocessing and robust feature engineering, including deep learning embeddings, mitigate these limitations. Our results demonstrate that both handcrafted and learned features from gaze behavior enable promising levels of classification performance. This research represents an important step towards scalable, automated, and accessible diagnostic tools for neurodegenerative diseases using ubiquitous VR technology.},
   pdf={PSB2026_Gaze_Behavior_in_VR_for_Neurological_Diagnosis.pdf},
   preview={vr_gaze.png},
 }
+  % website      = {/projects/eyefruit/},
 
 
-@article{kaltheuner2025preconditioned,
+@inproceedings{kaltheuner2025preconditioned,
   title={Preconditioned Deformation Grids},
   author={Kaltheuner, Julian and Oebel, Alexander and Droege, Hannah and Stotko, Patrick and Klein, Reinhard},
-  journal={arXiv preprint arXiv:2509.18097},
+  booktitle={Computer Graphics Forum},
+  volume={44},
+  number={7},
+  pages={e70269},
   year={2025},
+  organization={Wiley Online Library},
+  html = {https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.70269},
   abstract={Dynamic surface reconstruction of objects from point cloud sequences is a challenging field in computer graphics. Existing approaches either require multiple regularization terms or extensive training data which, however, lead to compromises in reconstruction accuracy as well as over-smoothing or poor generalization to unseen objects and motions. To address these limitations, we introduce Preconditioned Deformation Grids, a novel technique for estimating coherent deformation fields directly from unstructured point cloud sequences without requiring or forming explicit correspondences. Key to our approach is the use of multi-resolution voxel grids that capture the overall motion at varying spatial scales, enabling a more flexible deformation representation. In conjunction with incorporating grid-based Sobolev preconditioning into gradient-based optimization, we show that applying a Chamfer loss between the input point clouds as well as to an evolving template mesh is sufficient to obtain accurate deformations. To ensure temporal consistency along the object surface, we include a weak isometry loss on mesh edges which complements the main objective without constraining deformation fidelity. Extensive evaluations demonstrate that our method achieves superior results, particularly for long sequences, compared to state-of-the-art techniques.},
   preview={precond.png},
-  pdf={Preconditioned_Deformation_Grids.pdf},
   code={https://github.com/vc-bonn/preconditioned-deformation-grids}
 }
 
