@@ -5,15 +5,38 @@
 	year = {2026},
   preview={transformer_inpainting.png},
   abstract={High-quality 3D streaming from multiple cameras is crucial for immersive experiences in many AR/VR applications. The limited number of views – often due to real-time constraints – leads to missing information and incomplete surfaces in the rendered images. Existing approaches typically rely on simple heuristics for the hole filling, which can result in inconsistencies or visual artifacts. We propose to complete the missing textures using a novel, application-targeted inpainting method independent of the underlying representation as an image-based post-processing step after the novel view rendering. The method is designed as a standalone module compatible with any calibrated multi-camera system. For this we introduce a multi-view aware, transformer-based network architecture using spatio-temporal embeddings to ensure consistency across frames while preserving fine details. Additionally, our resolution-independent design allows adaptation to different camera setups, while an adaptive patch selection strategy balances inference speed and quality, allowing real-time performance. We evaluate our approach against state-of-the-art inpainting techniques under the same real-time constraints and demonstrate that our model achieves the best trade-off between quality and speed, outperforming competitors in both image and video-based metrics.},
+  html = {https://openaccess.thecvf.com/content/WACV2026/papers/Van_Holland_Transformer-Based_Inpainting_for_Real-Time_3D_Streaming_in_Sparse_Multi-Camera_Setups_WACV_2026_paper.pdf}
+}
+
+@article{schulz20263dtv,
+  title={3DTV: A Feedforward Interpolation Network for Real-Time View Synthesis},
+  author={Schulz, Stefan and Edelstein, Fernando and Droege, Hannah and Hullin, Matthias B and Plack, Markus},
+  journal={arXiv preprint arXiv:2604.11211},
+  year={2026},
+  abstract={Real-time free-viewpoint rendering requires balancing multi-camera redundancy with the latency constraints of interactive applications. We address this challenge by combining lightweight geometry with learning and propose 3DTV, a feedforward network for real-time sparse-view interpolation. A Delaunay-based triplet selection ensures angular coverage for each target view. Building on this, we introduce a pose-aware depth module that estimates a coarse-to-fine depth pyramid, enabling efficient feature reprojection and occlusion-aware blending. Unlike methods that require scene-specific optimization, 3DTV runs feedforward without retraining, making it practical for AR/VR, telepresence, and interactive applications. Our experiments on challenging multi-view video datasets demonstrate that 3DTV consistently achieves a strong balance of quality and efficiency, outperforming recent real-time novel-view baselines. Crucially, 3DTV avoids explicit proxies, enabling robust rendering across diverse scenes. This makes it a practical solution for low-latency multi-view streaming and interactive rendering.},
+  html = {https://stefanmschulz.github.io/3DTV_webpage/},
+  preview={delauny2.png},
+}
+
+
+@article{kaltheuner2026neu,
+  title={Neu-PiG: Neural Preconditioned Grids for Fast Dynamic Surface Reconstruction on Long Sequences},
+  author={Kaltheuner, Julian and Droege, Hannah and Plack, Markus and Stotko, Patrick and Klein, Reinhard},
+  journal={arXiv preprint arXiv:2602.22212},
+  year={2026},
+  abstract={Temporally consistent surface reconstruction of dynamic 3D objects from unstructured point cloud data remains challenging, especially for very long sequences. Existing methods either optimize deformations incrementally, risking drift and requiring long runtimes, or rely on complex learned models that demand category-specific training. We present Neu-PiG, a fast deformation optimization method based on a novel preconditioned latent-grid encoding that distributes spatial features parameterized on the position and normal direction of a keyframe surface. Our method encodes entire deformations across all time steps at various spatial scales into a multi-resolution latent grid, parameterized by the position and normal direction of a reference surface from a single keyframe. This latent representation is then augmented for time modulation and decoded into per-frame 6-DoF deformations via a lightweight multilayer perceptron (MLP). To achieve high-fidelity, drift-free surface reconstructions in seconds, we employ Sobolev preconditioning during gradient-based training of the latent space, completely avoiding the need for any explicit correspondences or further priors. Experiments across diverse human and animal datasets demonstrate that Neu-PiG outperforms state-the-art approaches, offering both superior accuracy and scalability to long sequences while running at least 60x faster than existing training-free methods and achieving inference speeds on the same order as heavy pretrained models.},
+  preview={neupig.png},
+  code={https://github.com/vc-bonn/neu-pig},
+  html = {https://arxiv.org/pdf/2602.22212},
 }
 
 @article{juttner2025yesnt,
   title={Yesnt: Are Diffusion Relighting Models Ready for Capture Stage Compositing? A Hybrid Alternative to Bridge the Gap},
-  author={J{\"u}ttner, Elisabeth and Krath, Leona and Korfhage, Stefan and Dr{\"o}ge, Hannah and Hullin, Matthias B and Plack, Markus},
+  author={J{\"u}ttner, Elisabeth and Krath, Leona and Korfhage, Stefan and Droege, Hannah and Hullin, Matthias B and Plack, Markus},
   journal={arXiv preprint arXiv:2510.23494},
   year={2026},
   preview={yesnt.png},
-  html = {https://arxiv.org/abs/2510.23494},
+  html = {https://ejuet.github.io/yesnt/},
   abstract={Volumetric video relighting is essential for bringing captured performances into virtual worlds, but current approaches struggle to deliver temporally stable, production-ready results. Diffusion-based intrinsic decomposition methods show promise for single frames, yet suffer from stochastic noise and instability when extended to sequences, while video diffusion models remain constrained by memory and scale. We propose a hybrid relighting framework that combines diffusion-derived material priors with temporal regularization and physically motivated rendering. Our method aggregates multiple stochastic estimates of per-frame material properties into temporally consistent shading components, using optical-flow-guided regularization. For indirect effects such as shadows and reflections, we extract a mesh proxy from Gaussian Opacity Fields and render it within a standard graphics pipeline. Experiments on real and synthetic captures show that this hybrid strategy achieves substantially more stable relighting across sequences than diffusion-only baselines, while scaling beyond the clip lengths feasible for video diffusion. These results indicate that hybrid approaches, which balance learned priors with physically grounded constraints, are a practical step toward production-ready volumetric video relighting.}
 }
 
@@ -56,6 +79,7 @@
   abstract={Recent studies have demonstrated that eye tracking is a valuable tool in the detection, classification and staging of neurodegenerative diseases such as Parkinson’s Disease (PD). However, traditional methods for capturing gaze data often rely on expensive and non-engaging clinical equipment such as video-oculography, limiting their accessibility and scalability. In this work, we investigate the feasibility of using eye tracking data collected via consumer-grade virtual reality (VR) headsets to support neurological diagnostics in a more accessible and user-friendly manner. This approach enables large-scale, low-cost, and remote assessments, which are particularly valuable in early detection and monitoring of neurodegenerative conditions. We show that relevant oculomotor features extracted from VR-based eye tracking can be used for predictive assessment. Despite the inherent noise and lower precision of consumer devices, careful preprocessing and robust feature engineering, including deep learning embeddings, mitigate these limitations. Our results demonstrate that both handcrafted and learned features from gaze behavior enable promising levels of classification performance. This research represents an important step towards scalable, automated, and accessible diagnostic tools for neurodegenerative diseases using ubiquitous VR technology.},
   pdf={PSB2026_Gaze_Behavior_in_VR_for_Neurological_Diagnosis.pdf},
   preview={vr_gaze.png},
+  html = {https://www.worldscientific.com/doi/pdf/10.1142/9789819824755_0016},
 }
   % website      = {/projects/eyefruit/},
 
@@ -144,11 +168,11 @@ We evaluate the performance-efficiency trade-off of our method compared to state
 }
 
 @article{droge2025capture,
-  title={Capture Stage Environments: A Guide to Better Matting},
-  author={Droege, Hannah and Pfeifer, Janelle and Rabich, Saskia and Plack, Markus and Klein, Reinhard and Hullin, Matthias B},
+  title={Capture Stage Matting: Challenges, Approaches, and Solutions for Offline and Real-Time Processing},
+  author={Droege, Hannah and Pfeifer, Janelle and Rabich, Saskia and Klein, Reinhard and Hullin, Matthias B and Plack, Markus},
   journal={arXiv preprint arXiv:2507.07623},
   year={2025},
-  abstract={Capture stages are high-end sources of state-of-the-art recordings for downstream applications in movies, games, and other media. One crucial step in almost all pipelines is the matting of images to isolate the captured performances from the background. While common matting algorithms deliver remarkable performance in other applications like teleconferencing and mobile entertainment, we found that they struggle significantly with the peculiarities of capture stage content. The goal of our work is to share insights into those challenges as a curated list of those characteristics along with a constructive discussion for proactive intervention and present a guideline to practitioners for an improved workflow to mitigate unresolved challenges. To this end, we also demonstrate an efficient pipeline to adapt state-of-the-art approaches to such custom setups without the need of extensive annotations, both offline and real-time. For an objective evaluation, we propose a validation methodology based on a leading diffusion model that highlights the benefits of our approach.},
+  abstract={Capture stages are high-end sources of state-of-the-art recordings for downstream applications in movies, games, and other media. One crucial step in almost all pipelines is matting, i.e., separating captured performances from the background. While common matting algorithms deliver remarkable performance in other applications like teleconferencing and mobile entertainment, we found that they struggle significantly with the peculiarities of capture stage content. The goal of our work is to share insights into those challenges as a curated list of these characteristics along with a constructive discussion for proactive intervention and present a guideline to practitioners for an improved workflow to mitigate unresolved challenges. To this end, we also demonstrate an efficient pipeline to adapt state-of-the-art approaches to such custom setups without the need for extensive annotations, both offline and real-time. For an objective evaluation, we introduce a validation methodology using a state-of-the-art diffusion model to demonstrate the benefits of our approach.},
   preview={matting.png},
   html = {https://arxiv.org/abs/2507.07623},
 }
