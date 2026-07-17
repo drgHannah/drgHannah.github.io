@@ -57,15 +57,19 @@
 - title: Teaching
   type: time_table
   contents:
+  - title: Einführung in die Computergrafik (Digital Image Processing)
+    institution: University of Bonn
+    year: SS, 2026
+
   - title: Digitale Bildverarbeitung (Digital Image Processing)
     institution: University of Siegen
     year: WS, 2020-2022
-    students: ~20
+    #students: ~20
 
   - title: Digitale Bildverarbeitung Praktikum (Digital Image Processing Practicum)
     institution: University of Siegen
     year: SS, 2021-2022
-    students: ~35
+    #students: ~35
 
   - title: Object Oriented and Functional Programming
     institution: University of Siegen
